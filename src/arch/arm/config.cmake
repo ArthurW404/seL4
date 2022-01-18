@@ -132,8 +132,8 @@ config_option(
 
 config_option(
     KernelArmSMMU ARM_SMMU "Enable SystemMMU"
-    DEFAULT ON
-    DEPENDS "KernelPlatformTx2"
+    DEFAULT OFF
+    DEPENDS "KernelPlatformTx2 OR KernelPlatformZynqmp"
     DEFAULT_DISABLED OFF
 )
 
